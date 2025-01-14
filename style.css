@@ -1,0 +1,45 @@
+body{
+  margin:0;
+}
+
+
+
+
+/* ----------------------------------------------------------- */
+.footer{
+  position: absolute;
+  background-color: #FCE1E8;
+  width: 100%;
+  bottom: 0;
+}
+.km-footer-container{
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 50px;  
+
+}
+
+.km-logo{
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.km-logo-pop{
+  display: none;
+}
+
+@media (max-width:783px) {
+    .km-logo{
+      display: none;
+    }
+    .km-logo-pop{
+      display: block;
+      justify-content: center;
+      width: 30%;
+      height: 30%;
+    }
+}
