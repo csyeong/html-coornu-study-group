@@ -12,34 +12,179 @@ body{
   width: 100%;
   bottom: 0;
 }
+
 .km-footer-container{
   width: 100%;
   padding-top: 80px;
-  padding-bottom: 50px;  
+  padding-bottom: 1cqb;  
 
 }
-
 .km-logo{
   width: 100%;
-  
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: -50px;
   
 }
+.km-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
 
-.km-logo-pop{
+.km-about a{
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.km-about a:hover{
+  transform: scale(1.15); 
+  color: white;
+}
+
+.km-about span{
+  color: black;
+  font-size: 16px;
+  margin: 0;
+  display: inline;
+}
+
+/* 마지막라인 */
+.km-last-lign{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.km-icon-left{
+  display: flex;
+  gap: 35px;
+  font-size: 28px;
+  color: black;
+}
+
+.km-icon-left i {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.km-icon-left i:hover {
+  /* transform: scale(1.2);  */
+  color: white; 
+}
+
+.culture-future{
   display: none;
 }
 
-@media (max-width:783px) {
-    .km-logo{
-      display: none;
-    }
-    .km-logo-pop{
-      display: block;
-      justify-content: center;
-      width: 30%;
-      height: 30%;
-    }
+.km-logo-pop{
+display: none;
+}
+
+/* @media (max-width:783px) {
+  .km-logo{
+    display: none;
+  }
+  .km-logo-pop{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding: 5px 0;
+    position: relative;
+    top: -50px;
+  }
+  .km-logo-pop img{
+    width: 30%;
+    height: auto;
+    margin: 0;
+
+  }
+  .km-about{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .km-about span{
+    display: none;
+
+  }
+
+  .km-about a{
+    text-align: center;
+    width: 1000%;
+  }
+
+  .culture-future {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+} */
+
+
+
+@media (max-width: 783px) {
+  .km-logo{
+    display: none;
+  }
+
+  .km-footer-container {
+    display: flex;
+    flex-direction: column; /* 기본적으로 세로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+  }
+
+  .km-logo-pop {
+    /* border: 1px solid red; */
+    display: flex; /* Flexbox 사용 */
+    justify-content: flex-start; /* 로고를 왼쪽으로 정렬 */
+    align-items: center; 
+    flex: 1;  
+    padding: 10px 20px;
+    width: 100%; 
+    position: relative;
+    top: -40px; 
+  }
+
+  .km-about {
+    display: flex; /* Flexbox 사용 */
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    align-items: center; /* 수직 정렬 */
+    flex: 2; /* 가변 크기 설정 */
+    gap: 15px; /* 링크 간 간격 */
+    margin: 0; /* 여백 제거 */
+    width: auto; /* 자동 크기 */
+  }
+
+  .km-footer-container-row {
+    display: flex; /* Flexbox로 가로 정렬 */
+    justify-content: space-between; /* 왼쪽과 오른쪽 정렬 */
+    align-items: center; /* 수직 정렬 */
+    width: 100%; /* 전체 너비 */
+  }
+
+  .km-about a {
+    text-align: center; /* 링크 중앙 정렬 */
+    width: auto; /* 자동 크기 */
+  }
+
+  .km-about span {
+    display: none; /* | 기호 숨기기 */
+  }
 }
