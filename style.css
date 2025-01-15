@@ -34,6 +34,7 @@
     padding-bottom: 0px;
     font-weight: 500;
     color: black;
+    font-size: 15px;
 }
 
 .choi-history-nav-link:hover{
@@ -92,3 +93,66 @@
     font-size: 15px;
 }
 
+.choi-history-detail-sub{
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+@media (max-width: 600px){
+    .choi-history-header{
+        font-size: 34px;
+        padding: 20px 30px;
+    }
+
+    .choi-history-main-box{
+        width: 100%;
+        padding: 45px 30px;
+    }
+
+    .choi-history-nav-box{
+        margin-top: 39px;
+    }
+
+    .choi-history-nav{
+        padding: 12px;
+    }
+
+    .choi-history-nav-link{
+        font-size: 14px;
+    }
+
+    .choi-history-contents-out-box{
+        padding-top: 24px;
+        padding-bottom: 30px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .choi-history-contents-box{
+        padding-bottom: 30px;
+    }
+
+    .choi-history-contents-last-box{
+        padding-bottom: 0px;
+    }
+
+    .choi-history-contents-box h1{
+        font-size: 34px;
+    }
+
+    .choi-history-detail-box h4{
+        font-size: 16px;
+        padding-top: 6px;
+        padding-bottom: 8px;
+    }
+
+    .choi-history-detail-box p{
+        font-size: 14px;
+    }
+
+    .choi-history-detail-sub{
+        padding-top: 20px;
+    }
+}
