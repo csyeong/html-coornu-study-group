@@ -1,6 +1,3 @@
-.test{
-    border: 1px solid red;
-}
 
 .fade-wrap{
     transition: 1s;
@@ -14,7 +11,7 @@
     bottom: 0;
 }
 
-.choi-history-header{
+.sm-header{
     padding: 30px 60px;
     font-size: 80px;
 }
@@ -101,7 +98,7 @@
 }
 
 @media (max-width: 600px){
-    .choi-history-header{
+    .sm-header{
         font-size: 34px;
         padding: 20px 30px;
     }
