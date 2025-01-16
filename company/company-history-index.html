@@ -21,22 +21,18 @@
                 </div>
                 <div class="choi-history-nav-box">
                     <ul class="nav choi-history-nav">
-                        <li class="nav-item">
-                        <a class="nav-link active choi-history-nav-link" aria-current="page" href="#">모든 연도</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link choi-history-nav-link" href="#">~2009</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link choi-history-nav-link" href="#">2010~2019</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link choi-history-nav-link" href="#">2020~2025</a>
-                        </li>
+                        <input type="radio" class="choi-radio-nav" name="options-year" id="option0" autocomplete="off" checked>
+                        <label class="choi-radio-nav-label" for="option0">모든 연도</label>
+                        <input type="radio" class="choi-radio-nav" name="options-year" id="option1" autocomplete="off">
+                        <label class="choi-radio-nav-label" for="option1">~2009</label>
+                        <input type="radio" class="choi-radio-nav" name="options-year" id="option2" autocomplete="off">
+                        <label class="choi-radio-nav-label" for="option2">2010~2019</label>
+                        <input type="radio" class="choi-radio-nav" name="options-year" id="option3" autocomplete="off">
+                        <label class="choi-radio-nav-label" for="option3">2020~2025</label>
                     </ul>
                 </div>
                 <div class="choi-history-contents-out-box">
-                    <div class="fade-wrap">
+                    <div class="fade-wrap" id="display-year0">
                         <!-- scroll section 1-->
                         <section class="choi-history-contents-box">
                             <div class="choi-history-year-box">
@@ -65,9 +61,6 @@
                                 <p>드라마·예능·뉴미디어 분야를 통합, 관리하는 중간지주사 에스엠스튜디오스(SM Studios) 설립</p>
                             </div>
                         </section>
-                    </div>
-                    <div class="fade-wrap">
-                        <!-- scroll section 2-->
                         <section class="choi-history-contents-box">
                             <div class="choi-history-year-box">
                                 <h1>'20</h1>
@@ -77,6 +70,9 @@
                                 <p>JYP엔터테인먼트와 비욘드라이브코퍼레이션Beyond LIVE Corporation(BLC) 설립</p>
                             </div>
                         </section>
+                    </div>
+                    <div class="fade-wrap" id="display-year1">
+                        <!-- scroll section 2-->
                         <section class="choi-history-contents-box">
                             <div class="choi-history-year-box">
                                 <h1>'18</h1>
@@ -105,7 +101,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="fade-wrap">
+                    <div class="fade-wrap" id="display-year2">
                         <!-- scroll section 3-->
                         <section class="choi-history-contents-box">
                             <div class="choi-history-year-box">
@@ -166,7 +162,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="fade-wrap">
+                    <div class="fade-wrap" id="display-year3">
                         <!-- scroll section 4-->
                         <section class="choi-history-contents-box">
                             <div class="choi-history-year-box">
@@ -184,7 +180,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="fade-wrap">
+                    <div class="fade-wrap"  id="display-year4">
                         <!-- scroll section 5-->
                         <section class="choi-history-contents-box">
                             <div class="choi-history-year-box">
@@ -207,7 +203,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="fade-wrap">
+                    <div class="fade-wrap" id="display-year5">
                         <!-- scroll section 6-->
                         <section class="choi-history-contents-box">
                             <div class="choi-history-year-box">
