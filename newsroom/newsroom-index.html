@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+        <!-- 헤더 -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!-- 로고 -->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="https://file1.jobkorea.co.kr/Mng/2025/1/logo.png" alt="Logo" class="d-inline-block align-top" width="80">
+                </a>
+                <!-- 메뉴 토글 버튼 (모바일 대응) -->
+               
+                <!-- 내비게이션 메뉴 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="#hamBtn" aria-expanded="false" aria-label="Toggle navigation">
+                   <div class="ham" id="hamBtn">
+                    <div id="top" class="line"></div>
+                    <div id="mid" class="line"></div>
+                    <div id="btm" class="line"></div>
+                </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link" href="../company/company-intro-index.html" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
+                                COMPANY
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownHome">
+                                <a class="dropdown-item" href="../company/company-intro-index.html">INTRODUCION</a>
+                                <a class="dropdown-item" href="../company/company-history-index.html">HISTORY</a>
+                                <!-- <a class="dropdown-item" href="#">LABELS IN COMPANY</a> -->
+                                <a class="dropdown-item" href="../company/company-major-index.html">MAJOR AFFILIATES</a>
+                            </div>
+                        </li>
+                        <!-- Artists -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown" href="#" id="navbarDropdownArtists" role="button" aria-haspopup="true" aria-expanded="false">
+                                ARTIST
+                            </a>
+                            
+                        </li>
+                        <!-- IR -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown" href="ir-schedule-index.html" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
+                                IR
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownHome">
+                                <a class="dropdown-item" href="ir-schedule-index.html">  IR  일정</a>
+                                <a class="dropdown-item" href="#">경영실적</a>
+                                <a class="dropdown-item" href="#">재무정보</a>
+                                <a class="dropdown-item" href="#">주주정보</a>
+                                <a class="dropdown-item" href="#">공시정보</a>
+                                <a class="dropdown-item" href="#">공고</a>
+                                <a class="dropdown-item" href="#">추가정보</a>
+                            </div>
+                        </li>
+                        <!-- SUSTAINABILITY -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown" href="#" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
+                                SUSTAINABILITY
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownHome">
+                                <a class="dropdown-item" href="#">ESG</a>
+                                <a class="dropdown-item" href="#">ENVIRONMENT</a>
+                                <a class="dropdown-item" href="#">SOCIETY</a>
+                                <a class="dropdown-item" href="#">GOVERNANCE</a>
+                            </div>
+                        </li>
+                        <!-- NEWSROOM 메뉴 - 드롭다운 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
+                                NEWSROOM
+                            </a>
+                          
+                        </li>
+                        <!-- CAREERS 버튼 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
+                                CAREERS<img src="https://cdn2.smentertainment.com/images/icon-external-link-alt.svg" alt="바로가기로고" width="20"> 
+                            </a>
+                            
+                        </li>
+                         <!-- AUDITION 버튼 -->
+                         <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown" href="#" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
+                                AUDITION<img src="https://cdn2.smentertainment.com/images/icon-external-link-alt.svg" alt="바로가기로고" width="20"> 
+                            </a>
+                            
+                        </li>
+                         <!-- SERVICE -->
+                         <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown" href="#" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
+                                SERVICE
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownHome">
+                                <a class="dropdown-item" href="#">SMTOWN</a>
+                                <a class="dropdown-item" href="#">KWANGYA 119</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+    <!-- newsroom -->
+
+    <main>
+        <div class="ms-newsroom-nav">
+            <div class="ms-page-title">
+                <h1>NEWSROOM</h1>
+            </div>
+            <div class=swiper-nav>
+                <span class="nav-button nav-button--prev" role="button" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-c8ff005b1aca3773"></span>
+                <span class="nav-button nav-button--next" role="button" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-c8ff005b1aca3773"></span>
+            </div>
+        </div>
+
+        <div class="ms-page-content">
+            <div class="ms-new-banner">
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper" id="swiper-wrapper-1445cd71ba1030951" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-1090px, 0px, 0px); transition-delay: 0ms;">
+                        <div class="ms-news-item swiper-slide swiper-slide-prev" style="width: 1680px;" role="group" aria-label="1 / 5" data-swiper-slide-index="0">
+                            <div class="ms-news-item-container">
+                                <a href="https://www.smentertainment.com/newsroom/sm-%ec%b0%bd%eb%a6%bd-30%ec%a3%bc%eb%85%84-%ea%b8%b0%eb%85%90-2025-smtown-%ec%95%a8%eb%b2%94-2%ec%9b%94-14%ec%9d%bc-%eb%b0%9c%eb%a7%a4/">
+                                    <div class="ms-item-overlay">
+                                        <div class="ms-title"><h2>SM, 창립 30주년 기념 2025 SMTOWN 앨범 2월 14일 발매</h2></div>
+                                        <div class="ms-date">2025.01.14</div>
+                                    </div>
+                                    <div class="ms-item-thumbnail">
+                                        <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/2025-SMTOWN-%EC%95%A8%EB%B2%94-%EC%9D%B4%EB%AF%B8%EC%A7%80-1.jpg" alt="">											
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="ms-news-item swiper-slide swiper-slide-active" style="width: 1680px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
+                            <div class="ms-news-item-container">
+                                <a href="https://www.smentertainment.com/newsroom/sm-30%ec%a3%bc%eb%85%84-%ec%95%a8%eb%b2%94-nct-wish-%ec%8b%a0%ea%b3%a1-miracle-1%ec%9b%94-22%ec%9d%bc-%ec%98%a4%ed%9b%84-6%ec%8b%9c-%ea%b3%b5%ea%b0%9c/">
+                                    <div class="ms-item-overlay">
+                                        <div class="ms-title"><h2>‘SM 30주년 앨범’ NCT WISH, 신곡 ‘Miracle’ 1월 22일 오후 6시 공개</h2></div>
+                                        <div class="ms-date">2025.01.14</div>
+                                    </div>
+                                    <div class="ms-item-thumbnail">
+                                        <img src="https://cdn2.smentertainment.com/wp-content/uploads/2024/10/NCT-WISH-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%B5%EC%82%AC.jpg" alt="">											
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                                    
+                        <div class="ms-news-item swiper-slide swiper-slide-next" style="width: 1680px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
+                            <div class="ms-news-item-container">
+                                <a href="https://www.smentertainment.com/newsroom/smtown-live-2025-%ec%84%9c%ec%9a%b8-%ec%bd%98%ec%84%9c%ed%8a%b8-4%eb%a7%8c-%eb%aa%85%ec%9d%98-%ed%95%91%ed%81%ac%eb%b8%94%eb%9f%ac%eb%93%9c%ec%99%80-%eb%b9%9b/">
+                                    <div class="ms-item-overlay">
+                                        <div class="ms-title"><h2>‘SMTOWN LIVE 2025’ 서울 콘서트, 4만 명의 ‘핑크블러드’와 빛낸 창립 30주년</h2></div>
+                                        <div class="ms-date">2025.01.13</div>
+                                    </div>
+                                    <div class="ms-item-thumbnail">
+                                        <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/SMTOWN-LIVE-2025-%EC%84%9C%EC%9A%B8-%EC%BD%98%EC%84%9C%ED%8A%B8-%EB%8B%A8%EC%B2%B4-%EB%B0%8F-%EC%A0%84%EA%B2%BD-%EC%9D%B4%EB%AF%B8%EC%A7%80-1.jpg" alt="">											
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="ms-news-item swiper-slide" style="width: 1680px;" role="group" aria-label="4 / 5" data-swiper-slide-index="3">
+                            <div class="ms-news-item-container">
+                                <a href="https://www.smentertainment.com/newsroom/sm-%ec%8b%a0%ec%9d%b8-%ea%b1%b8%ea%b7%b8%eb%a3%b9-%ed%95%98%ec%b8%a0%ed%88%ac%ed%95%98%ec%b8%a0hearts2hearts-2%ec%9b%94-24%ec%9d%bc-%ec%a0%84%ea%b2%a9-%eb%8d%b0%eb%b7%94/">
+                                    <div class="ms-item-overlay">
+                                        <div class="ms-title"><h2>‘SM 신인 걸그룹’ 하츠투하츠(Hearts2Hearts), 2월 24일 전격 데뷔</h2></div>
+                                        <div class="ms-date">2025.01.13</div>
+                                    </div>
+                                    <div class="ms-item-thumbnail">
+                                        <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/%ED%95%98%EC%B8%A0%ED%88%AC%ED%95%98%EC%B8%A0-%EB%8D%B0%EB%B7%94-%EC%98%88%EA%B3%A0-%EC%9D%B4%EB%AF%B8%EC%A7%80-1.jpg" alt="">											
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="ms-news-item swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 1090px;">
+                            <div class="ms-news-item-container">
+                                <a href="https://www.smentertainment.com/newsroom/%ec%a7%80%eb%8b%88-tv-%ec%98%a4%eb%a6%ac%ec%a7%80%eb%84%90-%eb%93%9c%eb%9d%bc%eb%a7%88-%eb%82%98%eb%af%b8%eb%b8%8c-%ea%b9%80%ec%a7%80%ec%9a%b0-%ec%95%84%ec%9d%b4%eb%8f%8c-%ec%84%9c/">
+                                    <div class="ms-item-overlay">
+                                        <div class="ms-title"><h2>지니 TV 오리지널 드라마 ‘나미브’ 김지우, 아이돌 서바이벌 오디션 무대 오른다</h2></div>
+                                        <div class="ms-date">2025.01.13</div>
+                                    </div>
+                                    <div class="ms-item-thumbnail">
+                                        <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/%EA%B9%80%EC%A7%80%EC%9A%B0-%EB%82%98%EB%AF%B8%EB%B8%8C-%EC%8A%A4%ED%8B%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-01-1.jpg" alt="">											
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+   
+                    </div>
+
+                    <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                    </div>
+                    
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </div>
+        
+        
+        
+        </div>
+
+
+        <div class="ms-sm-section" >
+            <div class="ms-sm-section-inner">
+                <div class="ms-company-banner">
+                    <h5 class="ms-banner-ms-title">COMPANY</h5>
+                    <div class="ms-company-news swiper swiper-initialized swiper-vertical swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-aaa5ba8c59cfc22c" aria-live="off" style="transition-duration: 0ms; transform: translate3d(0px, -296px, 0px); transition-delay: 0ms;">                                         
+                            <div class="ms-news-item swiper-slide swiper-slide-next" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="height: 74px;">
+                                <a href="https://www.smentertainment.com/newsroom/d-3-sm-%ec%b0%bd%eb%a6%bd-30%ec%a3%bc%eb%85%84-%ea%b8%b0%eb%85%90-smtown-live-2025-%ec%84%9c%ec%9a%b8-%ec%bd%98%ec%84%9c%ed%8a%b8-%ea%b8%b0%eb%8c%80-%ed%8f%ac/">
+                                    <div class="ms-title"><h5>‘D-3’ SM 창립 30주년 기념 ‘SMTOWN LIVE 2025’ 서울 콘서트 기대 포인트</h5></div>
+                                    <div class="ms-date">2025.01.08</div>
+                                </a>
+                            </div>
+                            <div class="ms-news-item swiper-slide" style="height: 74px;" role="group" aria-label="1 / 5" data-swiper-slide-index="0">
+                                <a href="https://www.smentertainment.com/newsroom/sm-%ec%b0%bd%eb%a6%bd-30%ec%a3%bc%eb%85%84-%ea%b8%b0%eb%85%90-2025-smtown-%ec%95%a8%eb%b2%94-2%ec%9b%94-14%ec%9d%bc-%eb%b0%9c%eb%a7%a4/">
+                                    <div class="ms-title"><h5>SM, 창립 30주년 기념 2025 SMTOWN 앨범 2월 14일 발매</h5></div>
+                                    <div class="ms-date">2025.01.14</div>
+                                </a>
+                            </div>
+                            <div class="ms-news-item swiper-slide" style="height: 74px;" role="group" aria-label="2 / 5" data-swiper-slide-index="1">
+                                <a href="https://www.smentertainment.com/newsroom/smtown-live-2025-%ec%84%9c%ec%9a%b8-%ec%bd%98%ec%84%9c%ed%8a%b8-4%eb%a7%8c-%eb%aa%85%ec%9d%98-%ed%95%91%ed%81%ac%eb%b8%94%eb%9f%ac%eb%93%9c%ec%99%80-%eb%b9%9b/">
+                                    <div class="ms-title"><h5>‘SMTOWN LIVE 2025’ 서울 콘서트, 4만 명의 ‘핑크블러드’와 빛낸 창립 30주년</h5></div>
+                                    <div class="ms-date">2025.01.13</div>
+                                </a>
+                            </div>
+                            <div class="ms-news-item swiper-slide swiper-slide-prev" style="height: 74px;" role="group" aria-label="3 / 5" data-swiper-slide-index="2">
+                                <a href="https://www.smentertainment.com/newsroom/sm-%ec%b0%bd%eb%a6%bd-30%ec%a3%bc%eb%85%84-%ea%b8%b0%eb%85%90-smtown-live-2025-%ec%84%9c%ec%9a%b8-%ec%bd%98%ec%84%9c%ed%8a%b8-%ec%98%a4%eb%8a%9811%ec%9d%bc-%ea%b3%a0%ec%b2%99/">
+                                    <div class="ms-title"><h5>SM 창립 30주년 기념 ‘SMTOWN LIVE 2025’ 서울 콘서트 오늘(11일) 고척돔서 개막</h5></div>
+                                    <div class="ms-date">2025.01.11</div>
+                                </a>
+                            </div>
+                            <div class="ms-news-item swiper-slide swiper-slide-active" style="height: 74px;" role="group" aria-label="4 / 5" data-swiper-slide-index="3">
+                                <a href="https://www.smentertainment.com/newsroom/%ec%b0%bd%eb%a6%bd-30%ec%a3%bc%eb%85%84-sm-%ec%83%88-%ec%8a%ac%eb%a1%9c%ea%b1%b4-the-culture-the-future-%ea%b3%b5%ea%b0%9c/">
+                                    <div class="ms-title"><h5>창립 30주년 SM, 새 슬로건 ‘THE CULTURE, THE FUTURE’ 공개</h5></div>
+                                    <div class="ms-date">2025.01.10</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <span class="ms-company-news-nav">
+                            <span class="nav-button nav-button--prev" role="button" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-aaa5ba8c59cfc22c"></span>
+                            <span class="nav-button nav-button--next" role="button" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-aaa5ba8c59cfc22c"></span>
+                        </span>
+
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+
+
+
+
+                <div class="ms-news-list">
+                    <div class="ms-list-item">
+                        <a href="https://www.smentertainment.com/newsroom/sm-%ec%b0%bd%eb%a6%bd-30%ec%a3%bc%eb%85%84-%ea%b8%b0%eb%85%90-2025-smtown-%ec%95%a8%eb%b2%94-2%ec%9b%94-14%ec%9d%bc-%eb%b0%9c%eb%a7%a4/">
+                            <div class="ms-item-thumbnail">
+                                <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/2025-SMTOWN-%EC%95%A8%EB%B2%94-%EC%9D%B4%EB%AF%B8%EC%A7%80-1.jpg" alt="">								
+                            </div>
+                            <div class="ms-item-date">2025.01.14</div>
+                            <div class="ms-item-title"><h4>SM, 창립 30주년 기념 2025 SMTOWN 앨범 2월 14일 발매</h4></div>
+                        </a>
+                    </div>
+                    <div class="ms-list-item">
+                        <a href="https://www.smentertainment.com/newsroom/sm-30%ec%a3%bc%eb%85%84-%ec%95%a8%eb%b2%94-nct-wish-%ec%8b%a0%ea%b3%a1-miracle-1%ec%9b%94-22%ec%9d%bc-%ec%98%a4%ed%9b%84-6%ec%8b%9c-%ea%b3%b5%ea%b0%9c/">
+                            <div class="ms-item-thumbnail">
+                                <img src="https://cdn2.smentertainment.com/wp-content/uploads/2024/10/NCT-WISH-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B3%B5%EC%82%AC.jpg" alt="">								
+                            </div>
+                            <div class="ms-item-date">2025.01.14</div>
+                            <div class="ms-item-title"><h4>‘SM 30주년 앨범’ NCT WISH, 신곡 ‘Miracle’ 1월 22일 오후 6시 공개</h4></div>
+                        </a>
+                    </div>
+                    <div class="ms-list-item">
+                        <a href="https://www.smentertainment.com/newsroom/smtown-live-2025-%ec%84%9c%ec%9a%b8-%ec%bd%98%ec%84%9c%ed%8a%b8-4%eb%a7%8c-%eb%aa%85%ec%9d%98-%ed%95%91%ed%81%ac%eb%b8%94%eb%9f%ac%eb%93%9c%ec%99%80-%eb%b9%9b/">
+                            <div class="ms-item-thumbnail">
+                                <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/SMTOWN-LIVE-2025-%EC%84%9C%EC%9A%B8-%EC%BD%98%EC%84%9C%ED%8A%B8-%EB%8B%A8%EC%B2%B4-%EB%B0%8F-%EC%A0%84%EA%B2%BD-%EC%9D%B4%EB%AF%B8%EC%A7%80-1.jpg" alt="">								
+                            </div>
+                            <div class="ms-item-date">2025.01.13</div>
+                            <div class="ms-item-title"><h4>‘SMTOWN LIVE 2025’ 서울 콘서트, 4만 명의 ‘핑크블러드’와 빛낸 창립 30주년</h4></div>
+                        </a>
+                    </div>
+                    <div class="ms-list-item">
+                        <a href="https://www.smentertainment.com/newsroom/sm-%ec%8b%a0%ec%9d%b8-%ea%b1%b8%ea%b7%b8%eb%a3%b9-%ed%95%98%ec%b8%a0%ed%88%ac%ed%95%98%ec%b8%a0hearts2hearts-2%ec%9b%94-24%ec%9d%bc-%ec%a0%84%ea%b2%a9-%eb%8d%b0%eb%b7%94/">
+                            <div class="ms-item-thumbnail">
+                                <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/%ED%95%98%EC%B8%A0%ED%88%AC%ED%95%98%EC%B8%A0-%EB%8D%B0%EB%B7%94-%EC%98%88%EA%B3%A0-%EC%9D%B4%EB%AF%B8%EC%A7%80-1.jpg" alt="">								
+                            </div>
+                            <div class="ms-item-date">2025.01.13</div>
+                            <div class="ms-item-title"><h4>‘SM 신인 걸그룹’ 하츠투하츠(Hearts2Hearts), 2월 24일 전격 데뷔</h4></div>
+                        </a>
+                    </div>
+                    <div class="ms-list-item">
+                        <a href="https://www.smentertainment.com/newsroom/%ec%a7%80%eb%8b%88-tv-%ec%98%a4%eb%a6%ac%ec%a7%80%eb%84%90-%eb%93%9c%eb%9d%bc%eb%a7%88-%eb%82%98%eb%af%b8%eb%b8%8c-%ea%b9%80%ec%a7%80%ec%9a%b0-%ec%95%84%ec%9d%b4%eb%8f%8c-%ec%84%9c/">
+                            <div class="ms-item-thumbnail">
+                                <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/%EA%B9%80%EC%A7%80%EC%9A%B0-%EB%82%98%EB%AF%B8%EB%B8%8C-%EC%8A%A4%ED%8B%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-01-1.jpg" alt="">								
+                            </div>
+                            <div class="ms-item-date">2025.01.13</div>
+                            <div class="ms-item-title"><h4>지니 TV 오리지널 드라마 ‘나미브’ 김지우, 아이돌 서바이벌 오디션 무대 오른다</h4></div>
+                        </a>
+                    </div>
+                    <div class="ms-list-item">
+                        <a href="https://www.smentertainment.com/newsroom/sm-%ec%b0%bd%eb%a6%bd-30%ec%a3%bc%eb%85%84-%ea%b8%b0%eb%85%90-smtown-live-2025-%ec%84%9c%ec%9a%b8-%ec%bd%98%ec%84%9c%ed%8a%b8-%ec%98%a4%eb%8a%9811%ec%9d%bc-%ea%b3%a0%ec%b2%99/">
+                            <div class="ms-item-thumbnail">
+                                <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/SMTOWN-LIVE-2025-%EC%84%9C%EC%9A%B8-%EC%BD%98%EC%84%9C%ED%8A%B8-%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg" alt="">								
+                            </div>
+                            <div class="ms-item-date">2025.01.11</div>
+                            <div class="ms-item-title"><h4>SM 창립 30주년 기념 ‘SMTOWN LIVE 2025’ 서울 콘서트 오늘(11일) 고척돔서 개막</h4></div>
+                        </a>
+                    </div>
+                    <div class="ms-list-item">
+                        <a href="https://www.smentertainment.com/newsroom/%ec%b0%bd%eb%a6%bd-30%ec%a3%bc%eb%85%84-sm-%ec%83%88-%ec%8a%ac%eb%a1%9c%ea%b1%b4-the-culture-the-future-%ea%b3%b5%ea%b0%9c/">
+                            <div class="ms-item-thumbnail">
+                                <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/SM-%EC%B0%BD%EB%A6%BD-30%EC%A3%BC%EB%85%84-Our-Dream-%EC%9D%B4%EB%AF%B8%EC%A7%80.jpg" alt="">								
+                            </div>
+                            <div class="ms-item-date">2025.01.10</div>
+                            <div class="ms-item-title"><h4>창립 30주년 SM, 새 슬로건 ‘THE CULTURE, THE FUTURE’ 공개</h4></div>
+                        </a>
+                    </div>
+                    <div class="ms-list-item">
+                        <a href="https://www.smentertainment.com/newsroom/%ec%b0%a8%ec%84%b8%eb%8c%80-%ec%9d%8c%ec%9b%90-%ea%b0%95%ec%9e%90-%eb%9d%bc%ec%9d%b4%ec%a6%88-2024%eb%85%84-%eb%a9%9c%eb%a1%a0-%ec%97%b0%ea%b0%84-%ec%b0%a8%ed%8a%b8-3%ea%b3%a1/">
+                            <div class="ms-item-thumbnail">
+                                <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/%EB%9D%BC%EC%9D%B4%EC%A6%88-%EC%8B%B1%EA%B8%80-Hug-%EC%9D%B4%EB%AF%B8%EC%A7%80-1.jpg" alt="">								
+                            </div>
+                            <div class="ms-item-date">2025.01.10</div>
+                            <div class="ms-item-title"><h4>‘차세대 음원 강자’ 라이즈, 2024년 멜론 연간 차트 3곡 진입</h4></div>
+                        </a>
+                    </div>
+                    <div class="ms-list-item">
+                        <a href="https://www.smentertainment.com/newsroom/%eb%8f%99%ed%99%94%ec%a7%80%eb%a7%8c-%ec%b2%ad%eb%b6%88%ec%9e%85%eb%8b%88%eb%8b%a4-%ec%bd%94%eb%af%b8%eb%94%94%eb%8a%94-%ec%97%ad%ec%8b%9c-%ec%b5%9c%ec%8b%9c%ec%9b%90-%ea%b2%b0/">
+                            <div class="ms-item-thumbnail">
+                                <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/%EC%B5%9C%EC%8B%9C%EC%9B%90-%EB%8F%99%ED%99%94%EC%A7%80%EB%A7%8C-%EC%B2%AD%EB%B6%88%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%8A%A4%ED%8B%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-01-1.jpg" alt="">								</div>
+                            <div class="ms-item-date">2025.01.10</div>
+                            <div class="ms-item-title"><h4>‘동화지만 청불입니다’ 코미디는 역시 최시원! 결이 다른 열연 ‘호평’</h4></div>
+                        </a>
+                    </div>
+                    <div class="ms-list-item">
+                        <a href="https://www.smentertainment.com/newsroom/nct-%eb%8f%84%ec%98%81-%ed%91%9c-%ea%b7%b8%ec%9c%88%ed%94%8c%eb%a0%8c-%ec%98%a8%eb%8b%a4-%eb%ae%a4%ec%a7%80%ec%bb%ac-%ec%9b%83%eb%8a%94-%eb%82%a8%ec%9e%90-%ec%98%a4%eb%8a%9810/">
+                            <div class="ms-item-thumbnail">
+                                <img src="https://cdn2.smentertainment.com/wp-content/uploads/2025/01/%EB%8F%84%EC%98%81-%EC%9B%83%EB%8A%94-%EB%82%A8%EC%9E%90-%EC%8A%A4%ED%8B%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-01.jpg" alt="">								
+                            </div>
+                            <div class="ms-item-date">2025.01.10</div>
+                            <div class="ms-item-title"><h4>NCT 도영 표 그윈플렌 온다! 뮤지컬 ‘웃는 남자’ 오늘(10일) 첫 공연</h4></div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="pagination">
+                    <ul>
+                        <li class="is-active"><a href="https://www.smentertainment.com/newsroom/">1</a></li>
+                        <li><a href="https://www.smentertainment.com/newsroom/page/2/">2</a></li>
+                        <li><a href="https://www.smentertainment.com/newsroom/page/3/">3</a></li>
+                        <li>…</li>
+                        <li><a href="https://www.smentertainment.com/newsroom/page/1109/">1109</a></li>
+                        <li class="ms-page-nav-button ms-next-posts"><a href="https://www.smentertainment.com/newsroom/page/2/">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container km-footer-container">
+            <div class="km-footer-content text-center">
+                
+                <!-- && 사이즈 줄였을 때: km-logo는 숨겨지고 km-logo-small 표출 -->
+                <div class="km-logo-container d-flex justify-content-between align-items-center">
+                    <div class="km-logo">
+                        <img src="../km-img/img-long.png" class="img-fluid">
+                    </div>
+
+                    <div class="km-logo-small">
+                        <img src="../km-img/sm-short1.jpg" class="img-fluid">
+                    </div>
+
+                    <!-- 관련 링크 (로고 하단에 가로 정렬) -->
+                    <div class="km-about">
+                        <a href="#">NOTICE</a>
+                        <span>|</span>
+                        <a href="#">AUDITION</a>
+                        <span>|</span>
+                        <a href="#">CONTACT US</a>
+                        <span>|</span>
+                        <a href="#">FAMILY SITE</a>
+                    </div>
+                </div>
+
+                <!-- SNS & 저작권 -->
+                <div class="km-last-lign d-flex justify-content-between align-items-center">
+                    <div class="km-icon-left">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <div class="km-icon-right">
+                        <div class="km-culture-future">THE CULTURE, THE FUTURE ♬</div>
+                        <div>© SM Entertainment. All Rights Reserved.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener("load", function() {
+        var swiper = new Swiper('.swiper1', {
+            navigation: {
+                nextEl: '.swiper-nav .nav-button--next',
+                prevEl: '.swiper-nav .nav-button--prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+            observer: true,  // DOM 변화 감지
+            observeParents: true,  // 부모 요소 변화 감지
+            on: {
+                init: function () {
+                this.update();  // 초기화 시 강제로 업데이트
+            }
+            }
+        });
+        });
+    </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const swiper = new Swiper('.ms-company-news', {
+                direction: 'vertical',
+                loop: true,
+                autoplay: {
+                    delay: 3000, // 3초마다 슬라이드 이동
+                    disableOnInteraction: false, // 사용자 인터랙션 후에도 자동 슬라이드 유지
+                },
+                navigation: {
+                    nextEl: '.ms-company-news-nav .nav-button--next',
+                    prevEl: '.ms-company-news-nav .nav-button--prev',
+                },
+            });
+            swiper.slideNext(0);
+        });
+    </script>
+</body>
+</html>
