@@ -629,48 +629,48 @@ main {
 
 
 
-.navbar-nav .nav-item .dropdown-menu {
-  display: block;
-  /* 서브 메뉴 항상 보이도록 설정 */
-  width: 100%;
-  /* 화면 너비를 꽉 채우도록 설정 */
-  background-color: #223055;
-  border: none;
-  box-sizing: border-box;
-  position: unset;
-  left: 0;
-  transform: translateX(0);
-  box-shadow: none;
-  padding: 0;
-  top: 100%;
-  /* 부모 메뉴 아래로 위치 */
-}
+  .navbar-nav .nav-item .dropdown-menu {
+    display: block;
+    /* 서브 메뉴 항상 보이도록 설정 */
+    width: 100%;
+    /* 화면 너비를 꽉 채우도록 설정 */
+    background-color: #223055;
+    border: none;
+    box-sizing: border-box;
+    position: unset;
+    left: 0;
+    transform: translateX(0);
+    box-shadow: none;
+    padding: 0;
+    top: 100%;
+    /* 부모 메뉴 아래로 위치 */
+  }
 
-.navbar-nav .nav-item .dropdown-item {
-  font-size: 0.95em;
-  padding: 5px 0;
-  color: #bebebe;
-  text-align: left;
-}
+  .navbar-nav .nav-item .dropdown-item {
+    font-size: 0.95em;
+    padding: 5px 0;
+    color: #bebebe;
+    text-align: left;
+  }
 
-.navbar-nav .nav-item .dropdown-item:hover {
-  padding: 5px 0;
-  background-color: #223055;
-}
+  .navbar-nav .nav-item .dropdown-item:hover {
+    padding: 5px 0;
+    background-color: #223055;
+  }
 
 
 
-.nav-link {
-  padding: 5px 0;
+  .nav-link {
+    padding: 5px 0;
 
-}
+  }
 
-.nav-link:hover {
-  border-radius: 0px;
-  background-color: none;
-  padding: 5px 0;
+  .nav-link:hover {
+    border-radius: 0px;
+    background-color: none;
+    padding: 5px 0;
 
-}
+  }
 
 
 }
