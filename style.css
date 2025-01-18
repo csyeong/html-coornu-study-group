@@ -103,7 +103,40 @@ nav:hover {
   top: -4px;
 }
 
+/* 서브 메뉴가 기본적으로 보이지 않도록 설정 */
+.navbar-nav .nav-item .dropdown-menu {
+  display: none;
+  /* 서브 메뉴 숨기기 */
+  position: absolute;
+  /* 서브 메뉴가 부모 메뉴 아이템 아래에 위치하도록 설정 */
+  background-color: #223055;
+  padding: 0;
+  top: 100%;
+  /* 부모 메뉴 아래로 위치 */
+  left: 50%;
+  transform: translateX(-50%);
+  /* 드롭다운 메뉴에 그림자 효과 */
+}
 
+/* 메뉴 항목에 호버 시 서브 메뉴가 보이도록 설정 */
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+  /* 호버 시 드롭다운 메뉴 표시 */
+}
+
+/* 드롭다운 항목 스타일 */
+.navbar-nav .nav-item .dropdown-item {
+  color: #bebebe;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.navbar-nav .nav-item .dropdown-item:hover {
+  background-color: #ffb7ca;
+  /* 서브 메뉴 항목에 호버 시 배경 색상 변경 */
+  color: white;
+}
 
 
 /* main을 플렉스 확장해서 푸터를 아래로 밀어내기 */
@@ -503,40 +536,7 @@ main {
   color: white;
 }
 
-/* 서브 메뉴가 기본적으로 보이지 않도록 설정 */
-.navbar-nav .nav-item .dropdown-menu {
-  display: none;
-  /* 서브 메뉴 숨기기 */
-  position: absolute;
-  /* 서브 메뉴가 부모 메뉴 아이템 아래에 위치하도록 설정 */
-  background-color: #223055;
-  padding: 0;
-  top: 100%;
-  /* 부모 메뉴 아래로 위치 */
-  left: 50%;
-  transform: translateX(-50%);
-  /* 드롭다운 메뉴에 그림자 효과 */
-}
 
-/* 메뉴 항목에 호버 시 서브 메뉴가 보이도록 설정 */
-.navbar-nav .nav-item:hover .dropdown-menu {
-  display: block;
-  /* 호버 시 드롭다운 메뉴 표시 */
-}
-
-/* 드롭다운 항목 스타일 */
-.navbar-nav .nav-item .dropdown-item {
-  color: #bebebe;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-align: left;
-}
-
-.navbar-nav .nav-item .dropdown-item:hover {
-  background-color: #ffb7ca;
-  /* 서브 메뉴 항목에 호버 시 배경 색상 변경 */
-  color: white;
-}
 
 
 /* 모바일에서 햄버거 메뉴 보이게 설정 */
@@ -627,7 +627,7 @@ main {
     flex-direction: unset;
   }
 
-}
+
 
 .navbar-nav .nav-item .dropdown-menu {
   display: block;
