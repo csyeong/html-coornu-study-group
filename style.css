@@ -1,3 +1,6 @@
+.test {
+  border: 1px solid red;
+}
 /* 전체 페이지를 Flexbox로 정렬 */
 html,
 body {
@@ -6,8 +9,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-
 
 /* 헤더 스타일 */
 header {
@@ -18,8 +19,6 @@ header {
   z-index: 99;
   width: 100%;
 }
-
-
 
 /* 내비게이션 메뉴 */
 nav {
@@ -47,8 +46,7 @@ nav:hover {
   height: 40px;
   cursor: pointer;
   z-index: 99;
-  display: none;
-  /* 모바일에서만 보이도록 설정 */
+  display: none; /* 모바일에서만 보이도록 설정 */
 }
 
 .line {
@@ -84,14 +82,9 @@ nav:hover {
   display: none;
 }
 
-
 .nav-link {
   padding: 7px 14px;
   border-radius: 20px;
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 }
 
 .nav-link:hover {
@@ -108,41 +101,6 @@ nav:hover {
 
 /* 서브 메뉴가 기본적으로 보이지 않도록 설정 */
 .navbar-nav .nav-item .dropdown-menu {
-<<<<<<< HEAD
-  display: none;
-  /* 서브 메뉴 숨기기 */
-  position: absolute;
-  /* 서브 메뉴가 부모 메뉴 아이템 아래에 위치하도록 설정 */
-  background-color: #223055;
-  padding: 0;
-  top: 100%;
-  /* 부모 메뉴 아래로 위치 */
-  left: 50%;
-  transform: translateX(-50%);
-  /* 드롭다운 메뉴에 그림자 효과 */
-}
-
-/* 메뉴 항목에 호버 시 서브 메뉴가 보이도록 설정 */
-.navbar-nav .nav-item:hover .dropdown-menu {
-  display: block;
-  /* 호버 시 드롭다운 메뉴 표시 */
-}
-
-/* 드롭다운 항목 스타일 */
-.navbar-nav .nav-item .dropdown-item {
-  color: #bebebe;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-align: left;
-}
-
-.navbar-nav .nav-item .dropdown-item:hover {
-  background-color: #ffb7ca;
-  /* 서브 메뉴 항목에 호버 시 배경 색상 변경 */
-  color: white;
-}
-
-=======
     display: none;
     /* 서브 메뉴 숨기기 */
     position: absolute;
@@ -172,12 +130,90 @@ nav:hover {
     /* 서브 메뉴 항목에 호버 시 배경 색상 변경 */
     color: white;
   }
->>>>>>> master
 
 /* main을 플렉스 확장해서 푸터를 아래로 밀어내기 */
 main {
   flex: 1;
 }
+/* ---------------------------------------------------------------------------------- */
+
+.sy-artist {
+  margin: 15px;
+}
+
+.sy-artist img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+
+.sy-artist img:hover {
+  filter: brightness(0.5);
+  transform: scale(0.95);
+}
+
+.sy-box {
+  position: relative;
+}
+
+.sy-box:hover .sy-overlay {
+  display: block;
+}
+
+.sy-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: none;
+}
+
+.sy-more-artist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sy-more-artist a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  gap: 15px;
+  /* 텍스트와 아이콘 사이 간격 */
+}
+
+.sy-more-artist a:hover {
+  color: red;
+}
+
+/* 모바일 화면 대응 */
+@media (max-width: 768px) {
+  .sy-first-line .col,
+  .sy-second-line .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sy-second-line .row .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .sy-more-artist {
+    display: none;
+  }
+}
+/* ---------------------------------------------------------------------------------- */
 
 /* 푸터 스타일 */
 .footer {
@@ -196,8 +232,7 @@ main {
 
 /* 로고 크기 확대 */
 .km-logo {
-  width: 400px;
-  /* 기존보다 확대 */
+  width: 400px; /* 기존보다 확대 */
   margin: 30px;
   margin-left: 50px;
 }
@@ -383,7 +418,7 @@ main {
   border-bottom: 1px solid black;
 }
 
-.choi-radio-nav:checked+label {
+.choi-radio-nav:checked + label {
   border: none;
   color: black;
 }
@@ -409,9 +444,15 @@ main {
   color: black;
 }
 
+.choi-history-main-box-out {
+  padding: 1px;
+  height: auto;
+}
+
 .choi-history-main-box {
   width: 70%;
   padding: 90px 60px;
+  margin-left: auto;
 }
 
 .choi-history-main-box img {
@@ -448,10 +489,12 @@ main {
 .choi-history-contents-box h1 {
   color: #f2f2f2;
   font-size: 80px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .choi-history-contents-box h1:hover {
   color: #ffb7ca;
+  transform: scale(1.15);
 }
 
 .choi-history-detail-box h4 {
@@ -511,6 +554,7 @@ main {
   padding: 14px 24px;
   position: absolute;
   bottom: 30px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .choi-major-contents-box p {
@@ -518,7 +562,8 @@ main {
 }
 
 .choi-major-contents-box a:hover {
-  background-color: #b0b7c0;
+  background-color: #d7d6d6;
+  transform: scale(1.15);
 }
 
 .choi-history-main-box video {
@@ -546,11 +591,43 @@ main {
   margin-bottom: 0px;
 }
 
+.choi-schedule-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choi-schedule-title button {
+  background-color: transparent;
+  border: none;
+}
+
+.choi-schedule-title i {
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.choi-schedule-inner-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.choi-schedule-calendar-box {
+  width: 60%;
+  margin-right: 20px;
+}
+
+.choi-schedule-box {
+  width: 40%;
+}
+
 .choi-schedule-grid-box {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   list-style-type: none;
   text-align: center;
+  padding-left: 0px;
+  margin-left: 0px;
 }
 
 .choi-schedule-grid-box li {
@@ -564,15 +641,14 @@ main {
   width: 40px;
   height: 40px;
   line-height: 40px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.choi-schedule-grid-box span:hover {
+.choi-schedule-grid-box span:not(:empty):hover {
+  transform: scale(1.15);
   background-color: #ffb7ca;
   color: white;
 }
-
-
-
 
 /* 모바일에서 햄버거 메뉴 보이게 설정 */
 @media (max-width: 992px) {
@@ -590,7 +666,6 @@ main {
     border: none;
     outline: none;
   }
-
   .ham {
     display: block;
     position: absolute;
@@ -624,7 +699,7 @@ main {
 
   /* 내비게이션 메뉴 */
 
-  .navbar-brand>img {
+  .navbar-brand > img {
     width: 60px;
   }
 
@@ -636,7 +711,7 @@ main {
     margin-top: 20px;
   }
 
-  .nav-item>a {
+  .nav-item > a {
     font-size: 20px;
     font-weight: 700;
   }
@@ -645,7 +720,7 @@ main {
     padding-left: 5px;
   }
 
-  .nav-item>a:hover {
+  .nav-item > a:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
 
@@ -662,25 +737,8 @@ main {
     flex-direction: unset;
   }
 
-
-
   .navbar-nav .nav-item .dropdown-menu {
     display: block;
-<<<<<<< HEAD
-    /* 서브 메뉴 항상 보이도록 설정 */
-    width: 100%;
-    /* 화면 너비를 꽉 채우도록 설정 */
-    background-color: #223055;
-    border: none;
-    box-sizing: border-box;
-    position: unset;
-    left: 0;
-    transform: translateX(0);
-    box-shadow: none;
-    padding: 0;
-    top: 100%;
-    /* 부모 메뉴 아래로 위치 */
-=======
   /* 서브 메뉴 항상 보이도록 설정 */
   width: 100%;
   /* 화면 너비를 꽉 채우도록 설정 */
@@ -694,7 +752,6 @@ main {
   padding: 0;
   top: 100%;
   /* 부모 메뉴 아래로 위치 */
->>>>>>> master
   }
 
   .navbar-nav .nav-item .dropdown-item {
@@ -709,241 +766,275 @@ main {
     background-color: #223055;
   }
 
-
+  .dropdown-menu {
+    top: 0;
+  }
 
   .nav-link {
     padding: 5px 0;
-
   }
 
   .nav-link:hover {
     border-radius: 0px;
     background-color: none;
     padding: 5px 0;
-
   }
 
-
-}
-
-@media (max-width: 1200px) {
-  .sm-header {
-    font-size: 60px;
-    padding: 30px 40px;
+  .choi-schedule-span-before-js {
+    color: black;
   }
 
-  .choi-main-title {
-    font-size: 90px;
-    padding: 40px;
+  .choi-schedule-span-before-js:not(:empty):hover {
+    color: white;
   }
 
-  .choi-main-news {
-    padding-top: 32px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 30px;
-    font-size: 60px;
+  .choi-schedule-span-after-js {
+    color: #ffb7ca;
   }
 
-  .choi-intro-contents-box h2 {
-    font-size: 30px;
+  .choi-schedule-span-after-js:not(:empty):hover {
+    color: white;
   }
 
-  .choi-intro-contents-box p {
-    margin-top: 14px;
-    font-size: 14px;
+  .choi-schdule-date-box {
+    width: 20%;
   }
 
-  .choi-history-main-box {
-    width: 100%;
-    padding: 45px 30px;
+  .choi-schdule-contents-box {
+    width: 80%;
   }
 
-  .choi-history-nav-box {
-    margin-top: 52px;
+  @media (max-width: 1200px) {
+    .sm-header {
+      font-size: 60px;
+      padding: 30px 40px;
+    }
+
+    .choi-main-title {
+      font-size: 90px;
+      padding: 40px;
+    }
+
+    .choi-main-news {
+      padding-top: 32px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 30px;
+      font-size: 60px;
+    }
+
+    .choi-intro-contents-box h2 {
+      font-size: 30px;
+    }
+
+    .choi-intro-contents-box p {
+      margin-top: 14px;
+      font-size: 14px;
+    }
+
+    .choi-history-main-box {
+      width: 100%;
+      padding: 45px 30px;
+    }
+
+    .choi-history-nav-box {
+      margin-top: 52px;
+    }
+
+    .choi-history-nav {
+      padding: 20px;
+    }
+
+    .choi-history-nav-link {
+      font-size: 14px;
+    }
+
+    .choi-history-contents-out-box {
+      padding-top: 30px;
+      padding-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .choi-history-contents-box {
+      padding-bottom: 40px;
+    }
+
+    .choi-history-contents-last-box {
+      padding-bottom: 0px;
+    }
+
+    .choi-history-contents-box h1 {
+      font-size: 60px;
+    }
+
+    .choi-history-detail-box h4 {
+      font-size: 18px;
+      padding-top: 20px;
+      padding-bottom: 8px;
+    }
+
+    .choi-history-detail-box p {
+      font-size: 14px;
+    }
+
+    .choi-history-detail-sub {
+      padding-top: 20px;
+    }
   }
 
-  .choi-history-nav {
-    padding: 20px;
-  }
+  /* 반응형 스타일 */
+  @media (max-width: 783px) {
+    .km-logo-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: -35px;
+      margin-top: -37px;
+    }
 
-  .choi-history-nav-link {
-    font-size: 14px;
-  }
+    /* 로고 크기 줄이기 */
+    .km-logo {
+      display: none;
+    }
+    .km-logo-small {
+      display: block;
+      width: 150px;
+      margin: 30px;
+    }
 
-  .choi-history-contents-out-box {
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    /* 링크 크기 조정 */
+    .km-about {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 17px;
+      gap: 10px;
+      margin: 50px;
+    }
 
-  .choi-history-contents-box {
-    padding-bottom: 40px;
-  }
+    .km-about span {
+      display: none;
+    }
 
-  .choi-history-contents-last-box {
-    padding-bottom: 0px;
-  }
+    /* 마지막 줄 정렬 */
+    .km-last-lign {
+      flex-direction: column;
+      text-align: center;
+    }
 
-  .choi-history-contents-box h1 {
-    font-size: 60px;
-  }
+    .km-icon-left {
+      justify-content: center;
+    }
 
-  .choi-history-detail-box h4 {
-    font-size: 18px;
-    padding-top: 20px;
-    padding-bottom: 8px;
-  }
+    .km-icon-right {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-  .choi-history-detail-box p {
-    font-size: 14px;
-  }
+    .km-culture-future {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
 
-  .choi-history-detail-sub {
-    padding-top: 20px;
-  }
-}
+    .sm-header {
+      font-size: 34px;
+      padding: 20px 30px;
+    }
 
-/* 반응형 스타일 */
-@media (max-width: 783px) {
-  .km-logo-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: -35px;
-    margin-top: -37px;
-  }
+    .choi-main-title {
+      font-size: 60px;
+      padding: 30px;
+    }
 
-  /* 로고 크기 줄이기 */
-  .km-logo {
-    display: none;
-  }
+    .choi-main-news {
+      padding-top: 24px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      font-size: 34px;
+    }
 
-  .km-logo-small {
-    display: block;
-    width: 150px;
-    margin: 30px;
-  }
+    .choi-main-news-card-box {
+      border: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
 
-  /* 링크 크기 조정 */
-  .km-about {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 17px;
-    gap: 10px;
-    margin: 50px;
-  }
+    .choi-main-news-card-mobile-none {
+      display: none;
+    }
 
-  .km-about span {
-    display: none;
-  }
+    .choi-major-grid {
+      grid-template-columns: 1fr;
+    }
 
-  /* 마지막 줄 정렬 */
-  .km-last-lign {
-    flex-direction: column;
-    text-align: center;
-  }
+    .choi-thick-line-mobile-remove {
+      border-top: none;
+    }
 
-  .km-icon-left {
-    justify-content: center;
-  }
+    .choi-intro-contents-box {
+      padding-top: 24px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-bottom: 30px;
+    }
 
-  .km-icon-right {
-    text-align: center;
-    margin-top: 30px;
-  }
+    .choi-intro-contents-box h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
 
-  .km-culture-future {
-    display: block;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
+    .choi-history-nav-box {
+      margin-top: 39px;
+    }
 
-  .sm-header {
-    font-size: 34px;
-    padding: 20px 30px;
-  }
+    .choi-history-nav {
+      padding: 12px;
+    }
 
-  .choi-main-title {
-    font-size: 60px;
-    padding: 30px;
-  }
+    .choi-history-contents-out-box {
+      padding-top: 24px;
+      padding-bottom: 30px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
 
-  .choi-main-news {
-    padding-top: 24px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    font-size: 34px;
-  }
+    .choi-history-contents-box {
+      padding-bottom: 30px;
+    }
 
-  .choi-main-news-card-box {
-    border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-  }
+    .choi-history-contents-box h1 {
+      font-size: 34px;
+    }
 
-  .choi-main-news-card-mobile-none {
-    display: none;
-  }
+    .choi-history-detail-box h4 {
+      font-size: 16px;
+      padding-top: 6px;
+      padding-bottom: 8px;
+    }
 
-  .choi-major-grid {
-    grid-template-columns: 1fr;
-  }
+    .choi-major-contents-box {
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-bottom: 80px;
+    }
 
-  .choi-thick-line-mobile-remove {
-    border-top: none;
-  }
+    .choi-schedule-inner-box {
+      display: block;
+    }
 
-  .choi-intro-contents-box {
-    padding-top: 24px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 30px;
-  }
+    .choi-schedule-calendar-box {
+      width: 100%;
+      margin-right: 00px;
+    }
 
-  .choi-intro-contents-box h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
+    .choi-schedule-box {
+      width: 100%;
+      margin-top: 20px;
+    }
   }
-
-  .choi-history-nav-box {
-    margin-top: 39px;
-  }
-
-  .choi-history-nav {
-    padding: 12px;
-  }
-
-  .choi-history-contents-out-box {
-    padding-top: 24px;
-    padding-bottom: 30px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .choi-history-contents-box {
-    padding-bottom: 30px;
-  }
-
-  .choi-history-contents-box h1 {
-    font-size: 34px;
-  }
-
-  .choi-history-detail-box h4 {
-    font-size: 16px;
-    padding-top: 6px;
-    padding-bottom: 8px;
-  }
-
-  .choi-major-contents-box {
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 80px;
-  }
-
 }
