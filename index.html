@@ -6,29 +6,8 @@
     <title>SM Entertainment</title>
     <!-- Bootstrap CSS 링크 -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SM Entertainment</title>
-    <!-- Bootstrap CSS 링크 -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/96c323d840.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    </header>
-
-    
-
-    <script>
-        // 햄버거 버튼 클릭 시 애니메이션 효과
-        document.getElementById('hamBtn').addEventListener('click', function() {
-            this.classList.toggle('active');
-        });
-    </script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css">    
 </head>
 <body>
     <!-- 헤더 -->
@@ -51,14 +30,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="company/company-intro-index.html" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
                             COMPANY
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownHome">
-                            <a class="dropdown-item" href="#">INTRODUCION</a>
-                            <a class="dropdown-item" href="#">HISTORY</a>
-                            <a class="dropdown-item" href="#">LABELS IN COMPANY</a>
-                            <a class="dropdown-item" href="#">MAJOR AFFILIATES</a>
+                            <a class="dropdown-item" href="company/company-intro-index.html">INTRODUCION</a>
+                            <a class="dropdown-item" href="company/company-history-index.html">HISTORY</a>
+                            <!-- <a class="dropdown-item" href="#">LABELS IN COMPANY</a> -->
+                            <a class="dropdown-item" href="company/company-major-index.html">MAJOR AFFILIATES</a>
                         </div>
                     </li>
                     <!-- Artists -->
@@ -70,11 +49,11 @@
                     </li>
                     <!-- IR -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown" href="#" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link active dropdown" href="ir/ir-schedule-index.html" id="navbarDropdownHome" role="button" aria-haspopup="true" aria-expanded="false">
                             IR
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownHome">
-                            <a class="dropdown-item" href="#">  IR  일정</a>
+                            <a class="dropdown-item" href="ir/ir-schedule-index.html">  IR  일정</a>
                             <a class="dropdown-item" href="#">경영실적</a>
                             <a class="dropdown-item" href="#">재무정보</a>
                             <a class="dropdown-item" href="#">주주정보</a>
@@ -131,8 +110,6 @@
         </nav>
     </header>
 
-    
-
     <script>
         // 햄버거 버튼 클릭 시 애니메이션 효과
         document.getElementById('hamBtn').addEventListener('click', function() {
@@ -145,94 +122,140 @@
             <h1 class="choi-main-title">GLOBAL NO.1<br>ENTERTAINMENT GROUP</h1>
             <div class="choi-main-back-img"></div>
         </div>
+        <!-- ------------------------------------------------------------------------------------- -->
+        <div class="sy-artist">
+            <div class="sy-first-line row mb-4">
+                <div class="sy-box col">
+                    <img src="/artist-img/RIIZE.jpg">
+                    <div class="sy-overlay">RIIZE</div>
+                </div>
+                <div class="sy-box col">
+                    <img src="/artist-img/aespa.jpg">
+                    <div class="sy-overlay">AESPA</div>
+                </div>
+            </div>
+            <div class="sy-second-line row">
+                <div class="sy-box col">
+                    <img src="/artist-img/NCT127.jpg">
+                    <div class="sy-overlay">NCT127</div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col sy-box">
+                            <img src="/artist-img/BoA.jpg">
+                            <div class="sy-overlay">BOA</div>
+                        </div>
+                        <div class="col sy-more-artist">
+                            <a href="#">
+                                <div class="text-wrapper">
+                                    MORE<br>ARTISTS
+                                </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+
+                        </div>
+                        <div class="col sy-box">
+                            <img src="/artist-img/KANGTA.jpg">
+                            <div class="sy-overlay">KANGTA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- artist img-->
         <div class="choi-main-news-box">
             <h1 class="choi-main-news">NEWS</h1>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card-group">
-                        <div class="card choi-main-news-card-box">
-                            <div class="choi-main-news-item-box choi-thick-line">
-                                <h3>SM, 창립 30주년 기념 2025 SMTOWN 앨범 2월 14일 발매</h3>
-                                <p>현진영→레드벨벳 곡까지, 선후배 아티스트가 재해석하는 SM 대표 히트곡!새로운 단체곡 'Thank you' 포함 총 17곡 수록 SM엔터테인먼트(이하 SM)가 창립 30주년을 기념으로 </p>
+                    <div class="carousel-item active">
+                        <div class="card-group">
+                            <div class="card choi-main-news-card-box">
+                                <div class="choi-main-news-item-box choi-thick-line">
+                                    <h3>SM, 창립 30주년 기념 2025 SMTOWN 앨범 2월 14일 발매</h3>
+                                    <p>현진영→레드벨벳 곡까지, 선후배 아티스트가 재해석하는 SM 대표 히트곡!새로운 단체곡 'Thank you' 포함 총 17곡 수록 SM엔터테인먼트(이하 SM)가 창립 30주년을 기념으로 </p>
+                                </div>
+                                <div class="choi-main-news-item-bottom-box choi-thin-line">
+                                    <div class="choi-main-new-arrow">→</div>
+                                    <p>2025.01.14</p>
+                                </div>
                             </div>
-                            <div class="choi-main-news-item-bottom-box choi-thin-line">
-                                <div class="choi-main-new-arrow">→</div>
-                                <p>2025.01.14</p>
+                            <div class="card choi-main-news-card-box">
+                                <div class="choi-main-news-item-box choi-thick-line">
+                                    <h3>'SMTOWN LIVE 2025' 서울콘서트, 4만 명의 '핑크블러드'와 빛낸 창립 30주년 콘서트</h3>
+                                    <p>H.O.T.부터 연습생까지...총 98인의 아티스트가 펼친 SM 음악 대축제의 장 "SM의 음악은 영원할 것" 무대로 증명한 30년의 헤리티지 SM엔터테인먼트(이하 SM)의 창립 30주년 기념 공연</p>
+                                </div>
+                                <div class="choi-main-news-item-bottom-box choi-thin-line">
+                                    <div class="choi-main-new-arrow">→</div>
+                                    <p>2025.01.13</p>
+                                </div>
                             </div>
-                        </div>
-    <!-- Bootstrap JS, Popper.js, jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-                            <div class="choi-main-news-item-box choi-thick-line">
-                                <h3>'SMTOWN LIVE 2025' 서울콘서트, 4만 명의 '핑크블러드'와 빛낸 창립 30주년 콘서트</h3>
-                                <p>H.O.T.부터 연습생까지...총 98인의 아티스트가 펼친 SM 음악 대축제의 장 "SM의 음악은 영원할 것" 무대로 증명한 30년의 헤리티지 SM엔터테인먼트(이하 SM)의 창립 30주년 기념 공연</p>
-                            </div>
-                            <div class="choi-main-news-item-bottom-box choi-thin-line">
-                                <div class="choi-main-new-arrow">→</div>
-                                <p>2025.01.13</p>
-                            </div>
-                        </div>
-                        <div class="card choi-main-news-card-box choi-main-news-card-mobile-none">
-                            <div class="choi-main-news-item-box choi-thick-line">
-                                <h3>'SM 신인 걸그룹' 하츠투하츠 (Hearts2Hearts), 2월 24일 전격 공개</h3>
-                                <p>다채로운 매력의 여덟 멤버들이 펼쳐갈 신비로운 음악 세계 기대 'SMTOWN LIVE 2025' 서울 콘서트서 데뷔 예고 영상 깜짝 공개! 벌써부터 화제성 폭발 SM엔터테인먼트</p>
-                            </div>
-                            <div class="choi-main-news-item-bottom-box choi-thin-line">
-                                <div class="choi-main-new-arrow">→</div>
-                                <p>2025.01.13</p>
+                            <div class="card choi-main-news-card-box choi-main-news-card-mobile-none">
+                                <div class="choi-main-news-item-box choi-thick-line">
+                                    <h3>'SM 신인 걸그룹' 하츠투하츠 (Hearts2Hearts), 2월 24일 전격 공개</h3>
+                                    <p>다채로운 매력의 여덟 멤버들이 펼쳐갈 신비로운 음악 세계 기대 'SMTOWN LIVE 2025' 서울 콘서트서 데뷔 예고 영상 깜짝 공개! 벌써부터 화제성 폭발 SM엔터테인먼트</p>
+                                </div>
+                                <div class="choi-main-news-item-bottom-box choi-thin-line">
+                                    <div class="choi-main-new-arrow">→</div>
+                                    <p>2025.01.13</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card-group">
-                        <div class="card choi-main-news-card-box">
-                            <div class="choi-main-news-item-box choi-thick-line">
-                                <h3>창립 30주년 SM, 새 슬로건 'THE CULTURE, THE FUTURE' 공개</h3>
-                                <p>앞으로도 계속될 SM의 문화 헤리티지...K-POP의 새 미래 향한 도약 SM엔터테인먼트(이하 SM)가 창립 30주년을 기념해 새 슬로건을 공개했다. 1995년 2월 14일에 설립해 올해 창립 30주년을 맞이하는 SM은 오늘(10일) ‘THE CULTURE, THE FUTURE’(더 컬처, 더 퓨처)라는 새로운 슬로건을 선포하고, </p>
+                    <div class="carousel-item">
+                        <div class="card-group">
+                            <div class="card choi-main-news-card-box">
+                                <div class="choi-main-news-item-box choi-thick-line">
+                                    <h3>창립 30주년 SM, 새 슬로건 'THE CULTURE, THE FUTURE' 공개</h3>
+                                    <p>앞으로도 계속될 SM의 문화 헤리티지...K-POP의 새 미래 향한 도약 SM엔터테인먼트(이하 SM)가 창립 30주년을 기념해 새 슬로건을 공개했다. 1995년 2월 14일에 설립해 올해 창립 30주년을 맞이하는 SM은 오늘(10일) ‘THE CULTURE, THE FUTURE’(더 컬처, 더 퓨처)라는 새로운 슬로건을 선포하고, </p>
+                                </div>
+                                <div class="choi-main-news-item-bottom-box choi-thin-line">
+                                    <div class="choi-main-new-arrow">→</div>
+                                    <p>2025.01.10</p>
+                                </div>
                             </div>
-                            <div class="choi-main-news-item-bottom-box choi-thin-line">
-                                <div class="choi-main-new-arrow">→</div>
-                                <p>2025.01.10</p>
+                            <div class="card choi-main-news-card-box">
+                                <div class="choi-main-news-item-box choi-thick-line">
+                                    <h3>‘차세대 음원 강자’ 라이즈, 2024년 멜론 연간 차트 3곡 진입</h3>
+                                    <p>‘Get A Guitar’ → ‘Love 119’ → ‘Boom Boom Bass’ 롱런 인기 화제의 ‘Hug’ 리메이크까지, 2025년 ‘톱티어’ 모멘트 힘차게 시작. 라이즈(RIIZE, 에스엠엔터테인먼트 소속)가 2024년 멜론 연간 차트에 3곡을 올리며 또 한번 ‘톱티어’ 모멘트를 드러냈다.</p>
+                                </div>
+                                <div class="choi-main-news-item-bottom-box choi-thin-line">
+                                    <div class="choi-main-new-arrow">→</div>
+                                    <p>2025.01.10</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card choi-main-news-card-box">
-                            <div class="choi-main-news-item-box choi-thick-line">
-                                <h3>‘차세대 음원 강자’ 라이즈, 2024년 멜론 연간 차트 3곡 진입</h3>
-                                <p>‘Get A Guitar’ → ‘Love 119’ → ‘Boom Boom Bass’ 롱런 인기 화제의 ‘Hug’ 리메이크까지, 2025년 ‘톱티어’ 모멘트 힘차게 시작. 라이즈(RIIZE, 에스엠엔터테인먼트 소속)가 2024년 멜론 연간 차트에 3곡을 올리며 또 한번 ‘톱티어’ 모멘트를 드러냈다.</p>
-                            </div>
-                            <div class="choi-main-news-item-bottom-box choi-thin-line">
-                                <div class="choi-main-new-arrow">→</div>
-                                <p>2025.01.10</p>
-                            </div>
-                        </div>
-                        <div class="card choi-main-news-card-box choi-main-news-card-mobile-none">
-                            <div class="choi-main-news-item-box choi-thick-line">
-                                <h3>에스파, 3월 15~16일 서울 앙코르 콘서트 KSPO 돔 개최!</h3>
-                                <p>아시아∙북남미∙유럽 찍고 서울서 피날레! 더욱 풍성해질 ‘쇠 맛 파티’ 예고! 에스파(aespa, 에스엠엔터테인먼트 소속)가 서울에서 앙코르 콘서트를 개최한다. 공원 KSPO DOME에서 열리며, 한층 업그레이드된 무대 연출과</p>
-                            </div>
-                            <div class="choi-main-news-item-bottom-box choi-thin-line">
-                                <div class="choi-main-new-arrow">→</div>
-                                <p>2025.01.09</p>
+                            <div class="card choi-main-news-card-box choi-main-news-card-mobile-none">
+                                <div class="choi-main-news-item-box choi-thick-line">
+                                    <h3>에스파, 3월 15~16일 서울 앙코르 콘서트 KSPO 돔 개최!</h3>
+                                    <p>아시아∙북남미∙유럽 찍고 서울서 피날레! 더욱 풍성해질 ‘쇠 맛 파티’ 예고! 에스파(aespa, 에스엠엔터테인먼트 소속)가 서울에서 앙코르 콘서트를 개최한다. 공원 KSPO DOME에서 열리며, 한층 업그레이드된 무대 연출과</p>
+                                </div>
+                                <div class="choi-main-news-item-bottom-box choi-thin-line">
+                                    <div class="choi-main-new-arrow">→</div>
+                                    <p>2025.01.09</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
     </main>
+
+
+<!-- ------------------------------------------------------------------------------------- -->
+
 
     <footer class="footer">
         <div class="container km-footer-container">
@@ -273,7 +296,6 @@
                         <div>© SM Entertainment. All Rights Reserved.</div>
                     </div>
                 </div>
-
             </div>
         </div>    
     </footer>
