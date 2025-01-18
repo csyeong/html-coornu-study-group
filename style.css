@@ -627,7 +627,7 @@ main {
     flex-direction: unset;
   }
 
-
+}
   .navbar-nav .nav-item .dropdown-menu {
     display: block;
     /* 서브 메뉴 항상 보이도록 설정 */
@@ -637,7 +637,8 @@ main {
     border: none;
     box-sizing: border-box;
     position: unset;
-    left: unset;
+    left: 0;
+    transform: translateX(0);
     box-shadow: none;
     padding: 0;
     top: 100%;
