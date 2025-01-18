@@ -803,6 +803,7 @@ main {
   .choi-schdule-contents-box {
     width: 80%;
   }
+}
 
   @media (max-width: 1200px) {
     .sm-header {
@@ -880,6 +881,7 @@ main {
 
     .choi-history-detail-sub {
       padding-top: 20px;
+      font-size: 18px;
     }
   }
 
@@ -1032,6 +1034,10 @@ main {
       padding-bottom: 8px;
     }
 
+    .choi-history-detail-sub{
+      font-size: 16px;
+    }
+
     .choi-major-contents-box {
       padding-left: 12px;
       padding-right: 12px;
@@ -1067,4 +1073,4 @@ main {
       display: none;
     }
   }
-}
+
