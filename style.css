@@ -628,271 +628,271 @@ main {
   }
 
 }
-  .navbar-nav .nav-item .dropdown-menu {
-    display: block;
-    /* 서브 메뉴 항상 보이도록 설정 */
+
+.navbar-nav .nav-item .dropdown-menu {
+  display: block;
+  /* 서브 메뉴 항상 보이도록 설정 */
+  width: 100%;
+  /* 화면 너비를 꽉 채우도록 설정 */
+  background-color: #223055;
+  border: none;
+  box-sizing: border-box;
+  position: unset;
+  left: 0;
+  transform: translateX(0);
+  box-shadow: none;
+  padding: 0;
+  top: 100%;
+  /* 부모 메뉴 아래로 위치 */
+}
+
+.navbar-nav .nav-item .dropdown-item {
+  font-size: 0.95em;
+  padding: 5px 0;
+  color: #bebebe;
+  text-align: left;
+}
+
+.navbar-nav .nav-item .dropdown-item:hover {
+  padding: 5px 0;
+  background-color: #223055;
+}
+
+
+
+.nav-link {
+  padding: 5px 0;
+
+}
+
+.nav-link:hover {
+  border-radius: 0px;
+  background-color: none;
+  padding: 5px 0;
+
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .sm-header {
+    font-size: 60px;
+    padding: 30px 40px;
+  }
+
+  .choi-main-title {
+    font-size: 90px;
+    padding: 40px;
+  }
+
+  .choi-main-news {
+    padding-top: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    font-size: 60px;
+  }
+
+  .choi-intro-contents-box h2 {
+    font-size: 30px;
+  }
+
+  .choi-intro-contents-box p {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+
+  .choi-history-main-box {
     width: 100%;
-    /* 화면 너비를 꽉 채우도록 설정 */
-    background-color: #223055;
+    padding: 45px 30px;
+  }
+
+  .choi-history-nav-box {
+    margin-top: 52px;
+  }
+
+  .choi-history-nav {
+    padding: 20px;
+  }
+
+  .choi-history-nav-link {
+    font-size: 14px;
+  }
+
+  .choi-history-contents-out-box {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .choi-history-contents-box {
+    padding-bottom: 40px;
+  }
+
+  .choi-history-contents-last-box {
+    padding-bottom: 0px;
+  }
+
+  .choi-history-contents-box h1 {
+    font-size: 60px;
+  }
+
+  .choi-history-detail-box h4 {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+  }
+
+  .choi-history-detail-box p {
+    font-size: 14px;
+  }
+
+  .choi-history-detail-sub {
+    padding-top: 20px;
+  }
+}
+
+/* 반응형 스타일 */
+@media (max-width: 783px) {
+  .km-logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -35px;
+    margin-top: -37px;
+  }
+
+  /* 로고 크기 줄이기 */
+  .km-logo {
+    display: none;
+  }
+
+  .km-logo-small {
+    display: block;
+    width: 150px;
+    margin: 30px;
+  }
+
+  /* 링크 크기 조정 */
+  .km-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 17px;
+    gap: 10px;
+    margin: 50px;
+  }
+
+  .km-about span {
+    display: none;
+  }
+
+  /* 마지막 줄 정렬 */
+  .km-last-lign {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .km-icon-left {
+    justify-content: center;
+  }
+
+  .km-icon-right {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .km-culture-future {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .sm-header {
+    font-size: 34px;
+    padding: 20px 30px;
+  }
+
+  .choi-main-title {
+    font-size: 60px;
+    padding: 30px;
+  }
+
+  .choi-main-news {
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-size: 34px;
+  }
+
+  .choi-main-news-card-box {
     border: none;
-    box-sizing: border-box;
-    position: unset;
-    left: 0;
-    transform: translateX(0);
-    box-shadow: none;
-    padding: 0;
-    top: 100%;
-    /* 부모 메뉴 아래로 위치 */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
   }
 
-  .navbar-nav .nav-item .dropdown-item {
-    font-size: 0.95em;
-    padding: 5px 0;
-    color: #bebebe;
-    text-align: left;
+  .choi-main-news-card-mobile-none {
+    display: none;
   }
 
-  .navbar-nav .nav-item .dropdown-item:hover {
-    padding: 5px 0;
-    background-color: #223055;
+  .choi-major-grid {
+    grid-template-columns: 1fr;
   }
 
-
-
-  .nav-link {
-    padding: 5px 0;
-
+  .choi-thick-line-mobile-remove {
+    border-top: none;
   }
 
-  .nav-link:hover {
-    border-radius: 0px;
-    background-color: none;
-    padding: 5px 0;
-
+  .choi-intro-contents-box {
+    padding-top: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 30px;
   }
 
-
-
-
-  @media (max-width: 1200px) {
-    .sm-header {
-      font-size: 60px;
-      padding: 30px 40px;
-    }
-
-    .choi-main-title {
-      font-size: 90px;
-      padding: 40px;
-    }
-
-    .choi-main-news {
-      padding-top: 32px;
-      padding-left: 40px;
-      padding-right: 40px;
-      padding-bottom: 30px;
-      font-size: 60px;
-    }
-
-    .choi-intro-contents-box h2 {
-      font-size: 30px;
-    }
-
-    .choi-intro-contents-box p {
-      margin-top: 14px;
-      font-size: 14px;
-    }
-
-    .choi-history-main-box {
-      width: 100%;
-      padding: 45px 30px;
-    }
-
-    .choi-history-nav-box {
-      margin-top: 52px;
-    }
-
-    .choi-history-nav {
-      padding: 20px;
-    }
-
-    .choi-history-nav-link {
-      font-size: 14px;
-    }
-
-    .choi-history-contents-out-box {
-      padding-top: 30px;
-      padding-bottom: 40px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    .choi-history-contents-box {
-      padding-bottom: 40px;
-    }
-
-    .choi-history-contents-last-box {
-      padding-bottom: 0px;
-    }
-
-    .choi-history-contents-box h1 {
-      font-size: 60px;
-    }
-
-    .choi-history-detail-box h4 {
-      font-size: 18px;
-      padding-top: 20px;
-      padding-bottom: 8px;
-    }
-
-    .choi-history-detail-box p {
-      font-size: 14px;
-    }
-
-    .choi-history-detail-sub {
-      padding-top: 20px;
-    }
+  .choi-intro-contents-box h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 
-  /* 반응형 스타일 */
-  @media (max-width: 783px) {
-    .km-logo-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: -35px;
-      margin-top: -37px;
-    }
-
-    /* 로고 크기 줄이기 */
-    .km-logo {
-      display: none;
-    }
-
-    .km-logo-small {
-      display: block;
-      width: 150px;
-      margin: 30px;
-    }
-
-    /* 링크 크기 조정 */
-    .km-about {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      font-size: 17px;
-      gap: 10px;
-      margin: 50px;
-    }
-
-    .km-about span {
-      display: none;
-    }
-
-    /* 마지막 줄 정렬 */
-    .km-last-lign {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .km-icon-left {
-      justify-content: center;
-    }
-
-    .km-icon-right {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .km-culture-future {
-      display: block;
-      font-weight: bold;
-      font-size: 18px;
-      margin-bottom: 5px;
-    }
-
-    .sm-header {
-      font-size: 34px;
-      padding: 20px 30px;
-    }
-
-    .choi-main-title {
-      font-size: 60px;
-      padding: 30px;
-    }
-
-    .choi-main-news {
-      padding-top: 24px;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-bottom: 20px;
-      font-size: 34px;
-    }
-
-    .choi-main-news-card-box {
-      border: none;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 20px;
-    }
-
-    .choi-main-news-card-mobile-none {
-      display: none;
-    }
-
-    .choi-major-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .choi-thick-line-mobile-remove {
-      border-top: none;
-    }
-
-    .choi-intro-contents-box {
-      padding-top: 24px;
-      padding-left: 12px;
-      padding-right: 12px;
-      padding-bottom: 30px;
-    }
-
-    .choi-intro-contents-box h2 {
-      font-size: 22px;
-      margin-bottom: 20px;
-    }
-
-    .choi-history-nav-box {
-      margin-top: 39px;
-    }
-
-    .choi-history-nav {
-      padding: 12px;
-    }
-
-    .choi-history-contents-out-box {
-      padding-top: 24px;
-      padding-bottom: 30px;
-      padding-left: 12px;
-      padding-right: 12px;
-    }
-
-    .choi-history-contents-box {
-      padding-bottom: 30px;
-    }
-
-    .choi-history-contents-box h1 {
-      font-size: 34px;
-    }
-
-    .choi-history-detail-box h4 {
-      font-size: 16px;
-      padding-top: 6px;
-      padding-bottom: 8px;
-    }
-
-    .choi-major-contents-box {
-      padding-left: 12px;
-      padding-right: 12px;
-      padding-bottom: 80px;
-    }
-
-    >>>>>>>develop
+  .choi-history-nav-box {
+    margin-top: 39px;
   }
+
+  .choi-history-nav {
+    padding: 12px;
+  }
+
+  .choi-history-contents-out-box {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .choi-history-contents-box {
+    padding-bottom: 30px;
+  }
+
+  .choi-history-contents-box h1 {
+    font-size: 34px;
+  }
+
+  .choi-history-detail-box h4 {
+    font-size: 16px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+  }
+
+  .choi-major-contents-box {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 80px;
+  }
+
+}
