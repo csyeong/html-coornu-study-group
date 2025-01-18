@@ -1,3 +1,6 @@
+.test {
+  border: 1px solid red;
+}
 /* 전체 페이지를 Flexbox로 정렬 */
 html,
 body {
@@ -241,9 +244,15 @@ main {
   color: black;
 }
 
+.choi-history-main-box-out {
+  padding: 1px;
+  height: auto;
+}
+
 .choi-history-main-box {
   width: 70%;
   padding: 90px 60px;
+  margin-left: auto;
 }
 
 .choi-history-main-box img {
@@ -280,10 +289,12 @@ main {
 .choi-history-contents-box h1 {
   color: #f2f2f2;
   font-size: 80px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .choi-history-contents-box h1:hover {
   color: #ffb7ca;
+  transform: scale(1.15);
 }
 
 .choi-history-detail-box h4 {
@@ -343,6 +354,7 @@ main {
   padding: 14px 24px;
   position: absolute;
   bottom: 30px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .choi-major-contents-box p {
@@ -350,7 +362,8 @@ main {
 }
 
 .choi-major-contents-box a:hover {
-  background-color: #b0b7c0;
+  background-color: #d7d6d6;
+  transform: scale(1.15);
 }
 
 .choi-history-main-box video {
@@ -378,11 +391,44 @@ main {
   margin-bottom: 0px;
 }
 
+.choi-schedule-title {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.choi-schedule-title button {
+  background-color: transparent;
+  border: none;
+}
+
+.choi-schedule-title i {
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.choi-schedule-inner-box{
+    display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.choi-schedule-calendar-box {
+  width: 60%;
+  margin-right: 20px;
+}
+
+.choi-schedule-box {
+  width: 40%;
+}
+
 .choi-schedule-grid-box {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   list-style-type: none;
   text-align: center;
+  padding-left: 0px;
+  margin-left: 0px;
 }
 
 .choi-schedule-grid-box li {
@@ -396,11 +442,37 @@ main {
   width: 40px;
   height: 40px;
   line-height: 40px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.choi-schedule-grid-box span:hover {
-  background-color: #ffb7ca;
-  color: white;
+.choi-schedule-grid-box span:not(:empty):hover {
+    transform: scale(1.15);
+    background-color: #ffb7ca;
+    color: white;
+}
+
+.choi-schedule-span-before-js{
+    color: black;
+}
+
+.choi-schedule-span-before-js:not(:empty):hover {
+    color: white;
+}
+
+.choi-schedule-span-after-js{
+    color: #ffb7ca;
+}
+
+.choi-schedule-span-after-js:not(:empty):hover {
+    color: white;
+}
+
+.choi-schdule-date-box{
+    width: 20%;
+}
+
+.choi-schdule-contents-box{
+    width: 80%;
 }
 
 @media (max-width: 1200px) {
@@ -620,5 +692,19 @@ main {
     padding-left: 12px;
     padding-right: 12px;
     padding-bottom: 80px;
+  }
+
+  .choi-schedule-inner-box{
+    display: block;
+  }
+
+  .choi-schedule-calendar-box {
+    width: 100%;
+    margin-right: 00px;
+  }
+  
+  .choi-schedule-box {
+    width: 100%;
+    margin-top: 20px;
   }
 }
