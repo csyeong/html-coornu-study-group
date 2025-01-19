@@ -868,13 +868,14 @@ main {
     color: white;
   }
 
-  .choi-schdule-date-box {
-    width: 20%;
-  }
+}
 
-  .choi-schdule-contents-box {
-    width: 80%;
-  }
+.choi-schdule-date-box {
+  width: 20%;
+}
+
+.choi-schdule-contents-box {
+  width: 80%;
 }
 
   @media (max-width: 1200px) {
