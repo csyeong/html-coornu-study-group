@@ -146,3 +146,8 @@ document.querySelectorAll('span[name="day"]').forEach((dayLi, index) => {
         fn_addSchedule(index);
     });
 });
+
+
+
+       
+
