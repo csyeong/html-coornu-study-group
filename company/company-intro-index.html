@@ -138,6 +138,11 @@
             </div>
         </div>
     </main>
+
+    <button id="km-scrollToTopBtn" class="km-scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <footer class="footer">
         <div class="container km-footer-container">
             <div class="km-footer-content text-center">
@@ -145,32 +150,44 @@
                 <!-- && 사이즈 줄였을 때: km-logo는 숨겨지고 km-logo-small 표출 -->
                 <div class="km-logo-container d-flex justify-content-between align-items-center">
                     <div class="km-logo">
-                        <img src="../km-img/img-long.png" class="img-fluid">
+                        <a href="../index.html"> 
+                            <img src="../km-img/img-long.png" class="img-fluid">
+                        </a>
                     </div>
 
                     <div class="km-logo-small">
-                        <img src="../km-img/sm-short1.jpg" class="img-fluid">
+                        <a href="../index.html">                       
+                            <img src="../km-img/sm-short1.jpg" class="img-fluid" alt="SM 로고">
+                        </a>
                     </div>
 
                     <!-- 관련 링크 (로고 하단에 가로 정렬) -->
                     <div class="km-about">
-                        <a href="#">NOTICE</a>
+                        <a href="https://www.smentertainment.com/ir/notice/" target="_blank">NOTICE</a>
                         <span>|</span>
-                        <a href="#">AUDITION</a>
+                        <a href="https://audition.smtown.com/" target="_blank">AUDITION</a>
                         <span>|</span>
-                        <a href="#">CONTACT US</a>
+                        <a href="https://www.smentertainment.com/contact/location/" target="_blank">CONTACT US</a>
                         <span>|</span>
-                        <a href="#">FAMILY SITE</a>
+                        <a href="../company/company-major-index.html" target="_blank">FAMILY SITE</a>
                     </div>
                 </div>
 
                 <!-- SNS & 저작권 -->
                 <div class="km-last-lign d-flex justify-content-between align-items-center">
                     <div class="km-icon-left">
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                        <i class="fa-brands fa-tiktok"></i>
+                        <a href="https://www.instagram.com/smtown" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/smtown/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/user/smtown" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/tag/sm%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8?lang=ko-KR" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>   
                     </div>
                     <div class="km-icon-right">
                         <div class="km-culture-future">THE CULTURE, THE FUTURE ♬</div>
@@ -185,5 +202,29 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollToTopBtn = document.getElementById("km-scrollToTopBtn");
+    
+            // 스크롤 이벤트 감지하여 버튼 표시/숨기기
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 200) { // 스크롤이 200px 이상 내려가면 버튼 표시
+                    scrollToTopBtn.style.display = "flex";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            });
+    
+            // 버튼 클릭 시 스크롤 맨 위로 이동
+            scrollToTopBtn.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // 부드러운 스크롤 효과
+                });
+            });
+        });
+    </script>
+    
+
 </body>
 </html>

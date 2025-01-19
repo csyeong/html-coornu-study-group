@@ -155,10 +155,33 @@ main {
 
 .sy-box {
   position: relative;
+/*------------------------ KM 수정한 부분 --------------------------------*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto; /
+/*------------------------ KM 수정한 부분 --------------------------------*/
 }
 
 .sy-box:hover .sy-overlay {
   display: block;
+}
+
+.sy-link {
+  display: block;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+.sy-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 비율 유지하면서 꽉 채우기 */
 }
 
 .sy-overlay {
@@ -181,6 +204,7 @@ main {
   font-weight: 700;
 }
 
+/*------------------------ KM 수정한 부분 --------------------------------*/
 .sy-more-artist a {
   display: flex;
   align-items: center;
@@ -188,12 +212,19 @@ main {
   color: black;
   gap: 15px;
   /* 텍스트와 아이콘 사이 간격 */
+  position: relative;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .sy-more-artist a:hover {
-  color: red;
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #FFB7CA, #D67D92, #915E8B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+/*------------------------ KM 수정한 부분 --------------------------------*/
 /* 모바일 화면 대응 */
 @media (max-width: 768px) {
   .sy-first-line .col,
@@ -283,12 +314,20 @@ main {
   margin-left: 35px;
 }
 
+.km-icon-left a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 부모 색상 상속 */
+  display: flex; /* a 태그가 i 태그를 감싸도 flex 유지 */
+  align-items: center;
+  justify-content: center;
+}
+
 .km-icon-left i {
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.km-icon-left i:hover {
+.km-icon-left a:hover i{
   color: white;
 }
 
@@ -304,6 +343,39 @@ main {
 .km-culture-future {
   display: none;
 }
+
+
+/* 맨 위로 가는 버튼 스타일 */
+
+.km-scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffb7ca; /* 버튼 색상 */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: none; /* 기본적으로 숨김 */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  font-size: 24px;
+}
+
+.km-scroll-to-top:hover {
+  background-color: #d67d92; /* 호버 시 색상 변경 */
+  transform: scale(1.1);
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
 
 .fade-wrap {
   transition: 1s;
@@ -901,7 +973,7 @@ main {
     }
     .km-logo-small {
       display: block;
-      width: 150px;
+      width: 118px;
       margin: 30px;
     }
 
@@ -910,7 +982,7 @@ main {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      font-size: 17px;
+      font-size: 15px;
       gap: 10px;
       margin: 50px;
     }
