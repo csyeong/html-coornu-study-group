@@ -104,7 +104,7 @@ function fn_changeCalendar(before){
             element.classList.add("choi-schedule-span-before-js");
         }
     }
-    for(let i = changeStartWeek + changeLastDay;i<35;i++){
+    for(let i = changeStartWeek + changeLastDay;i<42;i++){
         document.getElementById("day" + i).innerText = '';
         document.getElementById("day" + i).classList.remove("choi-schedule-span-after-js");
     }
