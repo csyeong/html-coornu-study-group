@@ -722,6 +722,14 @@ main {
   color: white;
 }
 
+.choi-schedule-span-after-js {
+    color: #ffb7ca;
+  }
+
+  .choi-schedule-span-after-js:not(:empty):hover {
+    color: white;
+  }
+
 /* 모바일에서 햄버거 메뉴 보이게 설정 */
 @media (max-width: 992px) {
   .navbar-toggler {
@@ -857,14 +865,6 @@ main {
   }
 
   .choi-schedule-span-before-js:not(:empty):hover {
-    color: white;
-  }
-
-  .choi-schedule-span-after-js {
-    color: #ffb7ca;
-  }
-
-  .choi-schedule-span-after-js:not(:empty):hover {
     color: white;
   }
 
